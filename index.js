@@ -17,7 +17,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 const run = async () => {
   try {
     await client.connect();
-    const productCollection=client.db('tour-italy').collection('places');
+    const productCollection=client.db('moon-tech').collection('products');
   
 
     app.get("/products", async (req, res) => {
